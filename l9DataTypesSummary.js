@@ -10,7 +10,7 @@ SYMBOL
 BigInt
 
 JS IS DYNAMIC TYPED LANGUAGE BECAUSE TYPE PHELE SE NHI BTATE.the type of a variable is determined at runtime, and you don't have to explicitly declare the type of a variable when you define it. Variables can hold values of any type, and the type can change as the program runs.
-
+//
 reference(non-primitive)
 inka reference directly allocate kia jata h
 ARRAY
