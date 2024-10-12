@@ -30,7 +30,7 @@
 
 //unnamed iife,parameterised
 ((name)=>{
-    console.log('DB CONNECTED two ${name');
+    console.log(`DB CONNECTED two ${name}`);
 })('damini');
 
 //iife ko pta nhi h kaha end hoga isilye ';' use krte h
