@@ -102,3 +102,55 @@ if(loggedInFromGoogle||loggedInFromEmial)
 
         
 // }
+
+
+
+
+//truthy,falsy.ternary
+
+// // const userEmail=[] //empty array
+// // if(userEmail) //
+// // {
+// //     console.log("Got user email");
+
+// // }
+// // else{
+// //     console.log("don't hava a email");
+
+// // }
+
+// //in js an empty array is considered a truthy value ,even though it may look like it's empty
+
+
+// //falsy
+// //false,0,-0,BigInt 0n,"",null,undefined,NaN
+
+// //TRUTHY-"0",'fasle'," ",[],{},function(){}
+
+// // if(userEmail.length===0)
+// // {
+// //     console.log("array is empty");
+// // }
+
+// const emptyObj={}
+
+// if(Object.keys(emptyObj).length===0)
+// {
+//     console.log("object is empty");
+// }
+// //nullish coalescing operator (??):null undefined
+
+// let val1;
+// val1=5??10// ?? checks for null or undefined why 5? because 5 is not null or undefined
+// console.log(val1);
+// val1=null??10 // ?? checks for null or undefined
+// console.log(val1);
+// val1=undefined??15
+// console.log(val1);
+// val1=null??10??20
+// console.log(val1);
+
+// //ternary operator
+// //condition?true:false
+// const iceTeaPrice=100
+// iceTeaPrice<=80?console.log("less than 80"):console.log("more than 80")
