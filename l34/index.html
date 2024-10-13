@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body STYLE="background-color: aquamarine; color: black;">
+    <ul class="language">
+        <li>JS</li>
+
+    </ul>
+
+</body>
+<SCRIPT>
+    //LIST ITEMS ADD KRWANA
+    function addLanguage(langName)
+    {
+       const li=document.createElement('li');
+       li.innerHTML=`${langName}`;
+       document.querySelector('.language').appendChild(li);
+
+       
+    }
+    //problem is that we have to add multiple languages after traversing to the end of the list,so it's not optimised
+    addLanguage('python');
+    addLanguage('java');
+
+    //OPTIMISED WAY
+    function addOptiLanguage(langName)
+    {
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+    }
+    addOptiLanguage('golang');
+
+    //Key Differences (Optimized Part):
+// createTextNode vs innerHTML: Instead of setting the inner HTML of the list item (which can be more expensive or less secure), the optimized version uses createTextNode() to create a text node. This is safer and faster because it strictly adds text, avoiding the need to parse or interpret HTML.
+
+//edit
+const secondLang=document.querySelector("li:nth-child(2)")
+// secondLang.innerHTML="C++";
+const newli=document.createElement('li')
+newli.textContent="C++"
+secondLang.replaceWith(newli);
+
+//edit
+const firstLang=document.querySelector("li-nth-child(1)")
+firstLang.outerHTML="<li>HTML</li>"
+
+//remove
+const lastLang=document.querySelector('li:last-child')
+lastLang.remove();
+</SCRIPT>
+</html>
