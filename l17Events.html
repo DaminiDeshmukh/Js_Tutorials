@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick=hello()>CLICK ME</button>
+    <script>
+        function hello()
+        {
+            alert("hi there");
+        }
+    </script> -->
+
+    <button id="btn">click me</button>
+    <script>
+        document.getElementById("btn").addEventListener("click",function(){
+            alert("button clicked")
+        });
+    </script>
+
+    <button id="btn">click me</button>
+    <script>
+        document.getElementById("btn").addEventListener("click",function(event){
+            console.log("button clicked")
+        });
+    </script>
+
+
+    <input type="text" onchange="onchangefun(this)">
+    <script>
+        function onchangefun(x){
+            alert("value.change"+x.value);
+        }
+    </script>
+
+</body>
+</html>
